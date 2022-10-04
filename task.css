@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Nabla&display=swap');
+
+body { 
+    background-color: blanchedalmond;
+    color:blueviolet;
+}
+
+h1{ 
+    font-family: 'Bungee Spice', cursive;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -250px;}
+    70% {top: 50px;}
+    100% {top: 20px;}
+}
+
+.ingredients { 
+width: 50%;
+margin: 0 auto;
+}
+
+.instructions {
+    width: 40%;
+    text-align: left;
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.ingredients-table { 
+margin: 0 auto;
+width: 38%;
+position: relative;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+}
+
+td{ 
+padding: 5px;
+}
+
+.instructions ol { 
+margin: 0 auto ;
+width: 100%;
+text-align: left;
+margin-top: 32px;
+    position: relative;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+}
+
+@keyframes textRight {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+img {
+    border-radius: 75px;
+    width: 500px;
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    opacity: 0;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes aniBtn {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
